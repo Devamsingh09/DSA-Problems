@@ -1,12 +1,14 @@
 arr = [1,2,3,21,54,5]
 
-def check_duplicate(arr):
+def check_duplicates(arr):
+    seen = set()
     for i in range(0,len(arr)):
-        for j in range(i+1,len(arr)):
-            if arr[j]==arr[i]:
-                return True
-                break
+        if arr[i] in seen:
+            return True 
+            break
+        seen.add(arr[i])
     return False
+print(check_duplicates(ar))
   
 print(check_duplicate(arr))
 #     TC: O(n)
