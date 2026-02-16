@@ -1,6 +1,7 @@
 arr = [1,1,1,2,3,3,5,6,7,7,7,9,12,12,13]
 def lower_bound(arr,target):
-    lb,n=-1,len(arr)
+    n=len(arr)
+    lb=n
     low=0
     high=n-1
     while low<=high:
