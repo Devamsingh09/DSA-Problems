@@ -11,7 +11,7 @@ def lower_bound(arr,target):
             high=mid-1
         else:
             low=mid+1
-    return mid
+    return lb
 print(lower_bound(arr,1))
             
         
